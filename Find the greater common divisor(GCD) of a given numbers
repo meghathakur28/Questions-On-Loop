@@ -1,0 +1,48 @@
+import java.util.Scanner;
+//Find the greater common divisor(GCD) of a given numbers
+public class forloop {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the number1: ");
+        int n1=sc.nextInt();
+        System.out.println("enter the number2: ");
+        int n2=sc.nextInt();
+        System.out.print("The factors of "+n1+" are: ");
+        for(int i=1;i<=n1;i++)
+        {
+            if(n1%i==0)
+            {
+                System.out.print(i+" ");
+            }
+        }
+        System.out.println();
+        System.out.print("The factors of "+n2+" are: ");
+        for(int i=1;i<=n2;i++)
+        {
+            if(n2%i==0) {
+                System.out.print(i + " ");
+            }
+        }
+        //Brute Force approach 
+        int small=0;
+        if(n1<n2)
+        {
+            small=n1;
+        }
+        else
+        {
+            small=n2;
+        }
+        System.out.println();
+        System.out.print("The GCD is: ");
+        for(int i=small;i>0;i--)
+        {
+            if(n1%i==0&&n2%i==0)
+            {
+                System.out.println(i);
+                break;
+            }
+        }
+
+    }
+}
