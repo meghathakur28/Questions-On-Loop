@@ -1,0 +1,23 @@
+import java.util.Scanner;
+//given a number n. Find the sum of natural numbers till n but with alternate sign
+public class forloop {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the number: ");
+        int n=sc.nextInt();
+        int sum=0;
+        int na=0;
+        for(int i=1;i<=n;i++) {
+            if(i%2==0)
+            {
+                na=-i;
+            }
+            else
+            {
+                na=i;
+            }
+            sum=sum+na;
+        }
+        System.out.println(sum);
+    }
+}
