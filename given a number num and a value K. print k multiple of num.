@@ -1,0 +1,14 @@
+import java.util.Scanner;
+//given a number num and a value K. print k multiple of num.
+public class forloop {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the number: ");
+        int n=sc.nextInt();
+        System.out.println("enter the value k: ");
+        int k=sc.nextInt();
+        for(int i=1;i<=k;i++) {
+            System.out.println(n*i+" ");
+        }
+    }
+}
